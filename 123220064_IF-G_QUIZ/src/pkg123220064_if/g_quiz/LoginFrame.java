@@ -42,10 +42,9 @@ public class LoginFrame extends JFrame {
                 String username = textFieldUsername.getText();
                 String password = new String(passwordField.getPassword());
 
-                // Validasi login
                 if (username.equals("123220064") && password.equals("123123")) {
                     JOptionPane.showMessageDialog(LoginFrame.this, "Login berhasil!");
-                    // Redirect ke halaman input nilai
+                
                     InputNilaiFrame inputNilaiFrame = new InputNilaiFrame();
                     dispose();
                 } else {
